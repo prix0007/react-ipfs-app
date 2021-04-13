@@ -1,0 +1,21 @@
+.videoCard {
+
+    .MuiCardActionArea-root {
+     
+    }
+
+    .videoCard__details {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .videoCard__text {
+        padding: 0px 10px;
+        .videoCard__title {
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+    }
+}
+
+  

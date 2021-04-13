@@ -1,0 +1,47 @@
+.sideRowMain {
+    text-transform: none;
+    border-radius: 0px !important;
+   
+    &:hover {
+        background-color: lightgray !important;
+        .sideRowMain__icon {
+            color: #215CCB;
+        }
+        .sideRowMain__text {
+            // font-weight: 600;
+        }
+    }
+
+    .sideRowMain__icon {
+        margin: 0px 20px 0px 15px;
+        display: flex;
+        font-size: 1rem;
+        align-items: center;
+        color: grey;
+
+    }
+
+    .sideRowMain__text {
+        font-size: 1em;
+        font-weight: 400;
+        text-rendering: optimizeSpeed;
+    }
+
+    .MuiButton-label {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-transform: none;
+        padding: 5px;
+    }
+
+    &.selected {
+        background-color: lightgrey  !important;
+        .sideRowMain__icon {
+            color: #215CCB;
+        }
+        .sideRowMain__text {
+            // font-weight: 600;
+        }
+    }
+}
