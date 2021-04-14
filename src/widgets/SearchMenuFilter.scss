@@ -1,0 +1,42 @@
+.searchMenu {
+
+  .searchMenu__genre {
+    padding: 10px;
+    .searchMenu__genre_list {
+      min-height: 200px;
+      max-height: 330px;
+      overflow: scroll;
+      overflow-x: hidden;
+    }
+
+    .searchMenu__chip {
+      margin: 2px;
+    }
+  }
+
+  .searchMenu__filter_wrappper_col {
+    display: flex;
+    padding: 5px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .searchMenu__filter_wrappper {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+
+    .searchMenu__filter_label {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  .searchMenu__actions {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin: 20px;
+  }
+}
