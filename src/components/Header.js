@@ -13,7 +13,10 @@ import {
    Link
 } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({
+  sidebar,
+  setSidebar
+}) => {
 
   const [inputSearch, setInputSearch] = React.useState("");
 
@@ -21,13 +24,12 @@ const Header = () => {
     setInputSearch(e.target.value);
   }
 
-
   return (
     <div className="header" style={{background: "white"}}>
       <div className="header__left">
 				<IconButton
 					tooltipText="Menu"
-					onClick={() => {}}
+					onClick={() => {setSidebar(!sidebar)}}
 				>
 					<MenuIcon />
 				</IconButton>

@@ -40,7 +40,7 @@ const AnimeRow = ({
         )}
         <Typography varaint="body2">
           {description.substring(0, 500)}
-          {description.length > 120 && <Link> read more.</Link>}
+          {description.length > 120 && <Link to="/"> read more.</Link>}
         </Typography>
         <div className="animeRow__actions">
           <Button variant="contained" color="primary">
