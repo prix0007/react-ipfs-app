@@ -79,7 +79,7 @@ const episodesList = [
 
 const animePageTheme = createMuiTheme({
   palette: {
-    type: "dark",
+    type: "light",
   },
 });
 

@@ -6,6 +6,7 @@ import MainContent from "./components/MainContent";
 import SearchPage from "./components/SearchPage";
 import AccountPage from "./components/AccountPage";
 import AnimePage from './pages/AnimePage';
+import AnimePlayer from './pages/AnimePlayer';
 import Grid from "@material-ui/core/Grid";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -30,6 +31,9 @@ function App() {
               </Route>
               <Route path={["/anime", "/anime/:animeName"]}>
                 <AnimePage />
+              </Route>
+              <Route path={["/player", "/player/:episodeHash"]}>
+                <AnimePlayer />
               </Route>
               <Route path="/account">
                 <AccountPage />

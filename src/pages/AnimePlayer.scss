@@ -1,0 +1,33 @@
+.animePlayer {
+  padding: 10px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+  .animePlayer_content {
+    margin-top: 200px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+  }
+  .animePlayer_head_title {
+    padding: 10px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    h5 {
+      margin-left: 20px;
+      
+    }
+  }
+  .animePage__episodes_tile {
+    padding: 10px;
+    margin: 20px 0px;
+  }
+  .animePage__episodes_wrapper {
+     display: flex;
+     align-items: center;
+      justify-content: center;
+  }
+
+}

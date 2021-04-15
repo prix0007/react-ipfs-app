@@ -13,6 +13,8 @@ import "../widgets/ToolTipIconButton";
 import { makeStyles } from "@material-ui/core/styles";
 import ToolTipIconButton from "../widgets/ToolTipIconButton";
 
+import { useHistory } from "react-router-dom";
+
 const useStyles = makeStyles((theme) => ({ 
   root: {
     maxWidth: 345,
@@ -27,9 +29,10 @@ const useStyles = makeStyles((theme) => ({
 
 const EpisodeCard = ({ imageUrl, episode, title }) => {
   const classes = useStyles();
+  const history = useHistory();
   return (
     <Card className={classes.root} button>
-      <CardActionArea>
+      <CardActionArea onClick={() => {history.push(`/player/${title}`)}}>
         <CardMedia className={classes.media} image={imageUrl} title={title} />
         <CardContent>
           <Typography variant="body2" color="textPrimary" component="p">
